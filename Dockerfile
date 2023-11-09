@@ -1,6 +1,5 @@
-# Utilisez une image de base Java
-# Utilisez une image de base Java 11
-FROM openjdk:11-jdk-alpine
+# Utilisez une image de base Java 11 Alpine d'AdoptOpenJDK
+FROM adoptopenjdk/openjdk11:alpine-jre
 
 # Exposez le port sur lequel votre application Spring Boot s'exécute (par défaut, c'est le port 8080)
 EXPOSE 8082
