@@ -1,11 +1,14 @@
 package tn.esprit.devops_project;
 
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
 import tn.esprit.devops_project.entities.Operator;
 import tn.esprit.devops_project.repositories.OperatorRepository;
 import tn.esprit.devops_project.services.OperatorServiceImpl;
@@ -15,6 +18,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+@Slf4j
+@ExtendWith(MockitoExtension.class)
 public class OperatorServiceImplTest {
 
     @InjectMocks
